@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,12 +13,24 @@ namespace exercises_barak
     {
         static void Main(string[] args)
         {
-            var expression = "3 4* 5";
-            expression = expression.Replace(" ", "");
             var calculator = new Calculator();
             Console.WriteLine("Welcome to the calculator");
             while (true)
             {
+                Console.WriteLine("Enter the Expression (for example: 3*4 ), (or type 'exit' to quit):");
+                string input = Console.ReadLine();
+                if (input.ToLower() == "exit") break;
+                try
+                {
+                var result = calculator.ExpressionExtract(input);
+                Console.WriteLine("result: ");
+                Console.WriteLine(result);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                /*
                 Console.WriteLine("Enter the first number (or type 'exit' to quit):");
                 string input1 = Console.ReadLine();
                 if (input1.ToLower() == "exit") break;
@@ -48,6 +61,7 @@ namespace exercises_barak
                 var result = calculator.Calculate(Convert.ToDouble(input1), Convert.ToDouble(input2), operation);
                 Console.WriteLine("result: ");
                 Console.WriteLine(result);
+                */
             }
         }
     }

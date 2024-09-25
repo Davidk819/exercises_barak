@@ -31,7 +31,17 @@ namespace exercises_barak
         }
         public double ExpressionExtract(string expression)
         {
-            throw null;
+            expression = expression.Replace(" ", "");
+            string[] parts = expression.Split(new char[] { '*', '/', '+', '-' });
+            if (parts.Length != 2)
+            {
+                throw new ArgumentException("The expression must contain exactly two numbers and valid operator");
+            }
+            double num1 = double.Parse(parts[0]);
+            double num2 = double.Parse(parts[1]);
+            char operatorChar =  expression[parts[0].Length];
+            return Calculate(num1, num2, operatorChar.ToString());
+
         }
         public double Add(double num1, double num2)
         {
