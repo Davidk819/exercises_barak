@@ -47,7 +47,7 @@ namespace UnitTestCalculator
             double num1 = 10;
             double num2 = 2;
 
-            var result = calculator.Add(num1, num2);
+            var result = calculator.Divide(num1, num2);
 
             Assert.AreEqual(5, result);
         }
