@@ -51,5 +51,15 @@ namespace UnitTestCalculator
 
             Assert.AreEqual(5, result);
         }
+        [TestMethod]
+        public void Given_Expression_When_Extracting_Then_Returns_TwoNumbers_And_Operation()
+        {
+            var calculator = new Calculator();
+            string expression = "3*2";
+
+            var result = calculator.ExpressionExtract(expression);
+
+            Assert.AreEqual(6, result);
+        }
     }
 }

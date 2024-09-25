@@ -29,6 +29,10 @@ namespace exercises_barak
                     throw new InvalidOperationException("Invalid operation");
             }
         }
+        public double ExpressionExtract(string expression)
+        {
+            throw null;
+        }
         public double Add(double num1, double num2)
         {
             return num1 + num2;

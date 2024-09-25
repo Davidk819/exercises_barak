@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace exercises_barak
 {
@@ -10,9 +12,10 @@ namespace exercises_barak
     {
         static void Main(string[] args)
         {
+            var expression = "3 4* 5";
+            expression = expression.Replace(" ", "");
             var calculator = new Calculator();
             Console.WriteLine("Welcome to the calculator");
-            Console.WriteLine();
             while (true)
             {
                 Console.WriteLine("Enter the first number (or type 'exit' to quit):");
