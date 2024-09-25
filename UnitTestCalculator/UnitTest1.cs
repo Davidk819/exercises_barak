@@ -61,5 +61,15 @@ namespace UnitTestCalculator
 
             Assert.AreEqual(6, result);
         }
+        [TestMethod]
+        public void Given_TwoNumbersAndDivisionOperation_When_number2_equal_0_Then_ReturnsError()
+        {
+            var calculator = new Calculator();
+            double num1 = 10;
+            double num2 = 0;
+            string operation = "/";
+
+            Assert.ThrowsException<DivideByZeroException>(() => calculator.Calculate(num1, num2, operation));
+        }
     }
 }

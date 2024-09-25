@@ -24,6 +24,7 @@ namespace exercises_barak
                 case "*":
                     return Multiply(num1, num2);
                 case "/":
+                    Console.WriteLine(Divide(num1, num2));
                     return Divide(num1, num2);
                 default:
                     throw new InvalidOperationException("Invalid operation");
@@ -57,6 +58,10 @@ namespace exercises_barak
         }
         public double Divide(double num1, double num2)
         {
+            if (num2 == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by zero");
+            }
             return (num1 / num2);
         }
 
