@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercises_barak", "exercises_barak\exercises_barak.csproj", "{2AA49422-1103-441A-9BB8-7CE7DC17B58C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCalculator", "UnitTestCalculator\UnitTestCalculator.csproj", "{8BF28616-9352-4E59-83EF-E8DEDED15BC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2AA49422-1103-441A-9BB8-7CE7DC17B58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AA49422-1103-441A-9BB8-7CE7DC17B58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AA49422-1103-441A-9BB8-7CE7DC17B58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF28616-9352-4E59-83EF-E8DEDED15BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF28616-9352-4E59-83EF-E8DEDED15BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF28616-9352-4E59-83EF-E8DEDED15BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF28616-9352-4E59-83EF-E8DEDED15BC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
