@@ -1,2 +1,39 @@
+# Ignore build results
 bin/
 obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore NuGet packages
+*.nupkg
+# Include packages directory but exclude subfolders
+!packages/
+packages/*/
+
+# Ignore logs, lock files, and results of build scripts
+*.log
+*.lock
+*.cache
+*.diff
+*.patch
+*.map
+*.tlog
+
+# Ignore IDE-specific folders and files
+.idea/
+.vscode/
+*.vs/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore ReSharper files
+_ReSharper*/
