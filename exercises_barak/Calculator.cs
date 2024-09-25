@@ -25,7 +25,7 @@ namespace exercises_barak
         }
         public double Add(double num1, double num2)
         {
-            throw null;
+            return num1 + num2;
         }
 
     }
