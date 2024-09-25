@@ -19,6 +19,12 @@ namespace exercises_barak
             {
                 case "+":
                     return Add(num1,num2);
+                case "-": 
+                    return Sub(num1,num2);
+                case "*":
+                    return Multiply(num1, num2);
+                case "/":
+                    return Divide(num1, num2);
                 default:
                     throw new InvalidOperationException("Invalid operation");
             }
@@ -26,6 +32,18 @@ namespace exercises_barak
         public double Add(double num1, double num2)
         {
             return num1 + num2;
+        }
+        public double Sub(double num1, double num2)
+        {
+            throw null;
+        }
+        public double Multiply(double num1, double num2)
+        {
+            throw null;
+        }
+        public double Divide(double num1, double num2)
+        {
+            throw null;
         }
 
     }
